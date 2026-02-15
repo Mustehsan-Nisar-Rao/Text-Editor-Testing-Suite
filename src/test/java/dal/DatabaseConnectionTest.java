@@ -1,14 +1,11 @@
 package dal;
 
 import static org.junit.Assert.*;
-import static org.mockito.Mockito.*;
 
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.After;
-import org.junit.BeforeClass;
 
-import java.sql.Connection;
 import java.lang.reflect.Field;
 
 /**

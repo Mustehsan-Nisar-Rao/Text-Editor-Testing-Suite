@@ -1,11 +1,7 @@
 package dal;
 
 import static org.junit.Assert.*;
-import static org.mockito.Mockito.*;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,21 +22,9 @@ import dto.Pages;
  */
 public class HashingIntegrityTest {
 
-	private HashCalculator hashCalculator;
-	private EditorDBDAO editorDAO;
-	private Connection mockConnection;
-	private PreparedStatement mockPreparedStatement;
-	private ResultSet mockResultSet;
-
 	@Before
 	public void setUp() throws Exception {
-		hashCalculator = new HashCalculator();
-		editorDAO = new EditorDBDAO();
-		
-		// Mock database components
-		mockConnection = mock(Connection.class);
-		mockPreparedStatement = mock(PreparedStatement.class);
-		mockResultSet = mock(ResultSet.class);
+		// No setup required for hash calculator tests
 	}
 
 	// ==================== POSITIVE PATH TESTS ====================

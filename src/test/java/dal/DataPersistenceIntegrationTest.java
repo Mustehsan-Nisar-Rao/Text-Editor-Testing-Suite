@@ -1,17 +1,12 @@
 package dal;
 
 import static org.junit.Assert.*;
-import static org.mockito.Mockito.*;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.mockito.ArgumentCaptor;
 
 import dto.Documents;
 import dto.Pages;
@@ -27,19 +22,9 @@ import dto.Pages;
  */
 public class DataPersistenceIntegrationTest {
 
-	private EditorDBDAO editorDAO;
-	private Connection mockConnection;
-	private PreparedStatement mockPreparedStatement;
-	private ResultSet mockResultSet;
-	private ArgumentCaptor<String> hashCaptor;
-
 	@Before
 	public void setUp() throws Exception {
-		// Create mocks
-		mockConnection = mock(Connection.class);
-		mockPreparedStatement = mock(PreparedStatement.class);
-		mockResultSet = mock(ResultSet.class);
-		hashCaptor = ArgumentCaptor.forClass(String.class);
+		// Setup for integration tests
 	}
 
 	/**
