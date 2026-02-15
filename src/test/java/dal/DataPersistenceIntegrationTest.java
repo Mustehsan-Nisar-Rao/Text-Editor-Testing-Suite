@@ -1,4 +1,4 @@
-package test.java.dal;
+package dal;
 
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
@@ -13,9 +13,6 @@ import org.junit.Before;
 import org.junit.Test;
 import org.mockito.ArgumentCaptor;
 
-import dal.DatabaseConnection;
-import dal.EditorDBDAO;
-import dal.HashCalculator;
 import dto.Documents;
 import dto.Pages;
 

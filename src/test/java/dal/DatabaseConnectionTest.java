@@ -1,4 +1,4 @@
-package test.java.dal;
+package dal;
 
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
@@ -8,7 +8,6 @@ import org.junit.Test;
 import org.junit.After;
 import org.junit.BeforeClass;
 
-import dal.DatabaseConnection;
 import java.sql.Connection;
 import java.lang.reflect.Field;
 
